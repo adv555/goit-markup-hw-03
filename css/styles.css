@@ -196,6 +196,7 @@ img {
 /* ======= ABOUT ======= */
 .about .container {
   padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
 }
 
 .about-list,
@@ -233,7 +234,8 @@ img {
 
 /* ======= SERVICES ======= */
 .services .container {
-  padding-top: var(--section-pt);
+  /* padding-top: var(--section-pt); */
+  padding-bottom: var(--section-pb);
 }
 .services-list {
   display: flex;
