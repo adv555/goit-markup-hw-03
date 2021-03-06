@@ -158,11 +158,13 @@ img {
 /* ======= END HEADER ======= */
 
 /* ======= HERO ======= */
-.hero .container {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 696px;
+}
 
+.hero .container {
+  width: 696px;
   text-align: center;
 }
 
