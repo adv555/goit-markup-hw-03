@@ -8,7 +8,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --accent-color: #2196f3;
-  --body-bg-light: #e5e5e5;
+  /* --body-bg-light: #e5e5e5; */
   --body-bg-dark: #2f303a;
   --body-bg-accent: #f5f4fa;
   --section-pt: 94px;
@@ -18,7 +18,7 @@
 
 body {
   font-family: var(--main-font);
-  background-color: var(--body-bg-light);
+  background-color: var(--white-color);
 }
 h1,
 h2,
@@ -100,9 +100,7 @@ img {
 /* ======= END COMPONENTS ======= */
 
 /* ======= HEADER ======= */
-.header {
-  background-color: var(--white-color);
-}
+
 .logo {
   margin-right: 93px;
 }
@@ -114,6 +112,8 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+
+  background-color: var(--white-color);
 }
 
 .header .container {
@@ -121,9 +121,9 @@ img {
   align-items: center;
 }
 
+.nav,
 .nav-list,
-.contact-list,
-.nav {
+.contact-list {
   display: flex;
   align-items: center;
 
@@ -148,6 +148,7 @@ img {
 .contact-link:focus {
   color: var(--accent-color);
 }
+
 .nav-link {
   color: var(--primary-text-color);
 }
@@ -160,8 +161,7 @@ img {
 .hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 252px;
-  padding-right: 252px;
+  width: 696px;
 
   text-align: center;
 }
@@ -194,7 +194,7 @@ img {
 /* ======= END HERO ======= */
 
 /* ======= ABOUT ======= */
-.about .container {
+.about {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
@@ -222,27 +222,26 @@ img {
   margin-bottom: 10px;
 
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.17;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 .about-item-description {
-  line-height: 1.17;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 /* ======= END ABOUT ======= */
 
 /* ======= SERVICES ======= */
-.services .container {
-  /* padding-top: var(--section-pt); */
+.services {
   padding-bottom: var(--section-pb);
 }
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-gap));
   margin-top: calc(-1 * var(--card-gap));
-  /* justify-content: space-between; */
 }
 .services-item {
   flex-basis: calc(100% / 3 - var(--card-gap));
@@ -253,12 +252,12 @@ img {
 /* ======= END SERVICES  ======= */
 
 /* ======= OUR TEAM ======= */
+
 .team {
-  background-color: var(--body-bg-accent);
-}
-.team .container {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
+
+  background-color: var(--body-bg-accent);
 }
 
 .team-list {
@@ -298,7 +297,7 @@ img {
 /* ======= END OUR TEAM ======= */
 
 /* ======= FOOTER ======= */
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -343,8 +342,9 @@ img {
 
 .filter-list {
   display: flex;
-  padding-bottom: 34px;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 .filter-item {
@@ -390,7 +390,7 @@ img {
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
 
-  border: 1px solid #eeeeee;
+  border: 0;
   background-color: var(--white-color);
 }
 
@@ -399,6 +399,8 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+
+  border: 1px solid #eeeeee;
 }
 
 .gallery-card-title {
